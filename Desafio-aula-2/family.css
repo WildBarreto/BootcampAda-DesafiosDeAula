@@ -1,0 +1,71 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.head {
+  padding: 20px;
+  position: relative;
+  justify-items: auto;
+  width: 100vw;
+  height: 10vh;
+  background-color: cornflowerblue;
+  color: aliceblue;
+}
+
+.head h1,
+h2,
+h3 {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+}
+.pai {
+  color: rgb(51, 51, 226);
+}
+.mae {
+  color: rgb(225, 55, 55);
+}
+.filho {
+  color: rgb(38, 167, 45);
+}
+.filha {
+  color: rgb(236, 117, 190);
+}
+
+table,
+tr,
+td {
+  border: 1px solid #ccc;
+}
+table {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-collapse: collapse;
+  width: 80vw;
+  margin: auto;
+}
+
+td {
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+th {
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+}
