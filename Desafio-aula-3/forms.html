@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./form.css" />
+    <title>Agência ✈️ TravelMundo</title>
+  </head>
+  <body>
+    <div class="top">
+      <h1 class="titulo">Agência ✈️ TravelMundo</h1>
+      <img src="./assets/travel-planning__1_.gif" alt="">
+    </div>
+    <div class="formulario">
+      <form action="formResponse.html">
+        <div>
+          <label for="text">Nome completo</label>
+          <input class="inputs" type="text" id="text" name="text" />
+        </div>
+
+        <div>
+          <label for="date">Escolha a data de partida</label>
+          <input class="inputs" type="date" id="date" name="date" />
+        </div>
+
+        <div>
+          <label for="number">Informe o número de passageiros</label>
+          <input class="inputs" type="number" id="number" name="number" />
+        </div>
+
+        <div class="partida">
+          <label for="number">Selecione o pais de partida</label>
+          <select name="partida">
+            <option value="Brasil">Brasil</option>
+            <option value="China">China</option>
+            <option value="Chile">Chile</option>
+            <option value="Peru">Peru</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="email">Digite seu email</label>
+          <input class="inputs" type="email" id="email" name="email" />
+        </div>
+        <div class="partida">
+          <label for="radio">Escolha o tipo de refeição</label><br />
+          
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio">vegetariana</label><br>
+
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio"> sem glúten</label><br>
+
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio"> padrão</label>
+        </div>
+        <div class="partida">
+          <label for="">Insira o país de destino</label>
+          <select name="cars">
+            <option value="Paris">Paris</option>
+            <option value="Londres">Londres</option>
+            <option value="Nova York">Nova York</option>
+            <option value="Tóquio">Tóquio</option>
+          </select>
+        </div>
+
+        <div class="partida">
+          <label for="checkbox">Escolha o tipo de assento</label><br />
+
+          <label for="">janela</label>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+
+          <label for="">corredor</label>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="">próximo à saída de emergência</label>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+        </div>
+
+        <div>
+          <label for="text">Digite o número de cartão de crédito</label>
+          <input class="inputs" type="text" id="text" name="text" />
+        </div>
+
+        <div class="partida">
+          <label for="file">Envie cópia digitalizada de seu passaporte</label>
+          <input type="file" id="file" name="file" />
+        </div>
+
+        <div class="partida">
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox">Serviço de quarto</label>
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox">Traslado do aeroporto</label>
+
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <label for="checkbox">Passeis turisticos adicionais</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
+<!--
+  / Captura os parâmetros na URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Lista dos nomes dos campos do formulário
+        const camposFormulario = [
+            "nome",
+            "data-partida",
+            "numero-passageiros",
+            "destino",
+            "email",
+            "telefone",
+            "refeicao",
+            "assento",
+            "cartao-credito",
+            "upload-passaporte",
+            "preferencias-servico"
+        ];
+-->
