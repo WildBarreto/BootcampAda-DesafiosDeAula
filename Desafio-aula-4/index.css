@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  height: 100vh;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navegacao {
+  top: 10px;
+}
+
+/*Estilos do header*/
+.header {
+  background-image: url("./assets/images/coffee_image.png");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o cabeçalho */
+  background-repeat: no-repeat;
+  color: #f3e7de;
+  font-family: "Clicker Script", cursive;
+  width: 100vw;
+  height: 768px;
+  padding-top: 30px;
+}
+header nav {
+  line-height: 32px;
+  font-size: 30px;
+  text-align: center;
+}
+nav > li {
+  margin-top: 30px;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  padding: 2px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #845132;
+  color: #f3e7de;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+.titulo {
+  font-size: 130px;
+  margin-left: 20px;
+  margin-top: 20vh;
+}
+
+.header > p {
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 50vw;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+/*Estilos da section sobre nós*/
+.sobre {
+  height: 105vh;
+}
+.sobre h2 {
+  color: #603809;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  padding-top: 20vh;
+  margin-left: 40px;
+}
+
+.sobre img {
+  float: right;
+}
+
+.sobre p {
+  color: #707070;
+  font-family: "Playfair Display", serif;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 60vw;
+  padding-top: 5vh;
+  margin-left: 40px;
+}
+
+/*Estilos do menu*/
+
+.menu {
+  background-color: #f3e7de;
+}
+
+.menu h2 {
+  color: #603809;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  padding-top: 5vh;
+  margin-left: 40px;
+}
+.menuItens {
+  display: inline-block;
+  text-align: center;
+}
+.menuItens article {
+  background-color: #f9f9f9;
+  padding: 0px;
+  margin-bottom: 20px;
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+.menuItens > article {
+  background-color: #dec4b2;
+  margin: 30px 20px;
+  border-radius: 10px;
+}
+
+.menuItens > article figure {
+  margin-bottom: 8px;
+}
+
+.menuItens > article figure img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.menuItens > figcaption {
+  font-family: "Clicker Script", cursive;
+}
