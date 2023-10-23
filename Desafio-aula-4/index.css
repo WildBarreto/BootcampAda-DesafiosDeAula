@@ -115,6 +115,7 @@ nav ul li a:focus {
 
 .menu {
   background-color: #f3e7de;
+  height: 100%;
 }
 
 .menu h2 {
@@ -128,19 +129,16 @@ nav ul li a:focus {
   display: inline-block;
   text-align: center;
 }
-.menuItens article {
+.menuItens > article {
   background-color: #f9f9f9;
+  background-color: rgb(249, 192, 106, 42%);
+  margin: 30px 25px;
+  border-radius: 10px;
   padding: 0px;
   margin-bottom: 20px;
   width: 15%;
   display: inline-block;
   text-align: center;
-}
-
-.menuItens > article {
-  background-color: #dec4b2;
-  margin: 30px 20px;
-  border-radius: 10px;
 }
 
 .menuItens > article figure {
@@ -154,4 +152,244 @@ nav ul li a:focus {
 
 .menuItens > figcaption {
   font-family: "Clicker Script", cursive;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/*Diferenciais*/
+.diferenciais {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title-diferenciais {
+  color: #603809;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  padding-top: 6vh;
+  margin-left: 0px;
+}
+
+.diferenciais h2 {
+  color: #603809;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  padding-top: 5vh;
+  margin-left: 40px;
+}
+
+.diferenciais > h3 {
+  color: #707070;
+  font-size: 20px;
+  padding-top: 5vh;
+  margin-left: 40px;
+}
+.diferenciais.supreme {
+  background-color: rgb(249, 192, 106, 30%);
+}
+.normal {
+  padding: 0px;
+  margin-bottom: 20px;
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(249, 192, 106, 15%);
+  margin: 30px 25px;
+  border-radius: 10px;
+}
+.supreme {
+  padding: 0px;
+  margin-bottom: 20px;
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(249, 192, 106, 35%);
+  margin: 30px 25px;
+  border-radius: 10px;
+}
+
+.diferenciais > article figure {
+  margin-bottom: 8px;
+}
+
+.diferenciais > article figure img {
+  border-radius: 10px 10px 0 0;
+  width: 30%;
+  margin-top: 50px;
+}
+.diferenciais {
+  color: #707070;
+  font-size: 15px;
+  padding-top: 5vh;
+  margin-left: 40px;
+}
+
+/*Cotação dos cafés*/
+
+.cotacao {
+  height: 94vh;
+}
+.cotacao > h3 {
+  color: #603809;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  margin-left: 40px;
+}
+
+.cotacao > img {
+  float: right;
+  width: 30%;
+  margin-top: 14vh;
+}
+
+.cotacao > table {
+  position: absolute;
+  width: 70%;
+  border-collapse: collapse;
+  font-family: "Playfair Display", serif;
+  background-color: #f9f6f2;
+  border: 2px solid #8b4513;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.cotacao > table th {
+  background-color: #8b4513; /* Marrom para o cabeçalho */
+  color: #fff; /* Texto branco para o cabeçalho */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo das células da tabela */
+.cotacao > table td {
+  padding: 10px;
+  border: 1px solid #8b4513;
+}
+
+/* Estilo de hover para realçar as linhas da tabela */
+.cotacao > table tr:hover {
+  background-color: #d2b48c; /* Uma cor dourada para realçar quando o mouse passa sobre a linha */
+}
+
+/*Formulario*/
+
+.formulario {
+  background-image: url("./assets/images/fotter_image\ \(1\).png");
+  height: 105vh;
+  padding-top: 5vh;
+  background-color: rgba(130, 75, 12, 0.971);
+  background-size: cover; /* Ajusta a imagem para cobrir todo o cabeçalho */
+  background-repeat: no-repeat;
+}
+
+.formulario h3 {
+  color: #f9f6f2;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  margin-left: 40px;
+}
+form {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f6f2;
+  border: 1px solid #8b4513;
+  border-radius: 5px;
+}
+
+/* Estilo para rótulos (labels) */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilo para campos de entrada de texto (input) e TextArea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de envio (submit) */
+button {
+  background-color: #8b4513;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando o mouse passa por cima (hover) */
+button:hover {
+  background-color: #45a049; /* Cor de fundo verde mais escura */
+}
+
+/*Footer*/
+
+footer {
+  height: 50vh;
+  padding-top: 0;
+  display: block;
+  background-image: url("./assets/images/coffee_image.png");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o cabeçalho */
+  background-repeat: no-repeat;
+  color: #f3e7de;
+  font-family: "Clicker Script", cursive;
+
+  height: 340px;
+  padding-top: 30px;
+}
+
+.beans {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.beans > h2 {
+  font-size: 60px;
+
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.beans > p {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 400px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.container {
+  text-align: center;
+  float: right;
+  margin-top: -270px;
+}
+
+.list {
+  cursor: pointer;
+  width: 100px; /* Ajuste a largura conforme necessário */
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  float: right; /* Use 'float' para posicionar as listas lado a lado */
+  margin-right: 20px; /* Adicione margem entre as listas conforme necessário */
+}
+
+.list > li a:hover {
+  background-color: #845132;
+  color: #f3e7de;
+  border-radius: 5px;
+  cursor: pointer;
 }
