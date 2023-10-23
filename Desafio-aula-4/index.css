@@ -28,7 +28,6 @@ a:visited {
 
 .navegacao {
   top: 10px;
-  
 }
 
 /*Estilos do header*/
@@ -162,6 +161,12 @@ aside {
   display: inline-block;
   text-align: center;
 }
+.menuItens > article:hover {
+  transform: scale(
+    1.2
+  ); /* Aumenta o tamanho em 20% quando o mouse está sobre o elemento */
+  cursor: pointer;
+}
 .menuItens > article {
   background-color: #f9f9f9;
   background-color: rgb(249, 192, 106, 42%);
@@ -195,6 +200,13 @@ aside {
   text-align: center;
   width: 100%;
   height: 100%;
+}
+
+.diferenciais > article:hover {
+  transform: scale(
+    1.2
+  ); /* Aumenta o tamanho em 20% quando o mouse está sobre o elemento */
+  cursor: pointer;
 }
 
 .title-diferenciais {
