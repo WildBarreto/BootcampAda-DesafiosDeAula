@@ -28,6 +28,7 @@ a:visited {
 
 .navegacao {
   top: 10px;
+  
 }
 
 /*Estilos do header*/
@@ -84,6 +85,38 @@ nav ul li a:focus {
   margin-left: 20px;
 }
 
+/*Aside de propaganda*/
+aside {
+  position: fixed;
+  top: 50%; /* Ajuste a altura desejada */
+  right: 0; /* Fixo na extremidade direita */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 80px;
+  background-color: #f3e7de;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.propaganda img {
+  max-width: 100%;
+}
+
+.propaganda p {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.propaganda a {
+  display: block;
+  background-color: #845132;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 10px;
+}
 /*Estilos da section sobre nós*/
 .sobre {
   height: 105vh;
