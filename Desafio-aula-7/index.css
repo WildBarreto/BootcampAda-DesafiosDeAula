@@ -178,9 +178,69 @@ nav ul li a:focus {
 }
 
 /*Estilo do feedbacks*/
+.feedback {
+  display: flex;
+}
 .feedback > img {
   height: 80vh;
 }
+.feedback > div> h2{
+  margin-bottom: 50px;
+}
+
+.carrossel {
+  width: 500px; /* Largura personalizada */
+  height: 250px; /* Altura personalizada */
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel-item {
+  display: flex;
+  width: 200%;
+  border-radius: 50px;
+  animation: move 25s infinite;
+}
+
+.item {
+  flex: 0 0 50%; 
+  height: 100%; 
+  background-color: #ecebeb; 
+  color: black; 
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.item > p {
+  width: 100%;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  85% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*Footer*/
 footer {
   display: flex;
