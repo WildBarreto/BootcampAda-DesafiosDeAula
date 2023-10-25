@@ -206,6 +206,40 @@ nav ul li a:focus {
 
 footer {
   display: flex;
+  justify-content: space-between;
+
   background-color: #ea1d2c;
   height: 40vh;
 }
+footer > div {
+  margin: 30px;
+}
+footer > div > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  width: 300px;
+}
+footer > div > div > a > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
+  padding: auto;
+  color: #ffffff;
+}
+
+.list > ul > li {
+  margin-bottom: 10px;
+}
+
+.copy {
+  margin-top: 200px;
+  color: #ffffff; 
+}
+
