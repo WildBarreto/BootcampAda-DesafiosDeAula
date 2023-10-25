@@ -64,7 +64,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #ea1d2c;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 100px;
   cursor: pointer;
 }
 
@@ -72,14 +72,31 @@ nav ul li a:focus {
   text-decoration: underline;
 }
 
-.header button {
+.login {
   width: 120px;
   height: 38px;
+  font-size: 18px;
   background-color: #ea1d2c;
   color: #ffffff;
   border-radius: 100px;
   cursor: pointer;
   border: none;
+}
+.login:hover {
+  background-color: #d11724;
+}
+.criar {
+  width: 120px;
+  height: 38px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #ea1d2c;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+}
+.criar:hover {
+  background-color: #ecebeb;
 }
 
 /*Part de destaque*/
@@ -160,50 +177,11 @@ nav ul li a:focus {
   padding-top: 5vh;
 }
 
-/*Estilo do menu*/
-.menu {
-  margin: 30px auto 30px auto;
-  text-align: center;
-  padding: 0;
-  width: 95%;
-  height: 100%;
+/*Estilo do feedbacks*/
+.feedback > img {
+  height: 80vh;
 }
-.menu > h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 45px;
-  padding-top: 5vh;
-  padding-bottom: 40px;
-}
-.menu-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.card-menu {
-  width: calc(20% - 35px);
-  border-radius: 20px;
-  background-color: #f7f7f7;
-  padding: 10px;
-  margin: auto;
-  margin-top: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.card-menu:hover {
-  transform: scale(
-    1.2
-  ); /* Aumenta o tamanho em 20% quando o mouse está sobre o elemento */
-  cursor: pointer;
-}
-
-.card-menu > figure > img {
-  width: 200px; /* Defina a largura desejada */
-  height: 200px;
-  border-radius: 8px;
-}
-
+/*Footer*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -240,6 +218,5 @@ footer > div > div > a > img:hover {
 
 .copy {
   margin-top: 200px;
-  color: #ffffff; 
+  color: #ffffff;
 }
-
