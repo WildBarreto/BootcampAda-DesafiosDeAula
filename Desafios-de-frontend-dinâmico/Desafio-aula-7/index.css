@@ -184,7 +184,7 @@ nav ul li a:focus {
 .feedback > img {
   height: 80vh;
 }
-.feedback > div> h2{
+.feedback > div > h2 {
   margin-bottom: 50px;
 }
 
@@ -203,10 +203,10 @@ nav ul li a:focus {
 }
 
 .item {
-  flex: 0 0 50%; 
-  height: 100%; 
-  background-color: #ecebeb; 
-  color: black; 
+  flex: 0 0 50%;
+  height: 100%;
+  background-color: #ecebeb;
+  color: black;
   border-radius: 50px;
   text-align: center;
   display: flex;
@@ -279,4 +279,101 @@ footer > div > div > a > img:hover {
 .copy {
   margin-top: 200px;
   color: #ffffff;
+}
+
+/*Responsividade*/
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 320px) {
+  .header {
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px; /
+  }
+  .navegacao ul {
+    display: none;
+  }
+  .login {
+    width: 50px;
+    height: 18px;
+    font-size: 10px;
+  }
+  .criar {
+    width: 50px;
+    height: 18px;
+    font-size: 10px;
+  }
+  .logo img {
+    max-height: 30px; 
+    margin-left: 20px; 
+  }
+  .destaque {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
+  .destaque > article > aside {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  .destaque > article > aside > img {
+    width: 150px;
+    margin-top: 40px;
+  }
+  .conteudo {
+    flex: 1; 
+    margin-left: 10px;
+    text-align: left;
+  }
+  .titulo {
+    margin-left: 0px;
+    font-size: 20px; 
+    width: 150px; 
+    margin-top: 50px; 
+  }
+
+  .conteudo > p {
+    width: 150px;
+    font-size: 10px;
+    text-align: justify;
+  }
+/*Vantagens*/
+  .diferenciais > h2{
+    margin-top: 0px;
+    font-size: 17px;
+  }
+
+  .diferenciais {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: 90vh;
+    
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  
+  .card-container > article:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .card > figure > img {
+    width: 80px;
+  }
+  .card > figure> figcaption> h3{
+    font-size: 13px;
+    width: 90px;
+  }
+  
+  
 }
