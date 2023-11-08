@@ -16,11 +16,10 @@ const groupedPartners = {
 }
 
 for (let id in partners) {
-  if (id.length === 11) {
-    groupedPartners.PF.push({ partnersId: id, nome: partners[id] });
-
+  if (id.length == 11) {
+    groupedPartners.PF.push({ partnersId: id, name: partners[id] });
   } else {
-    groupedPartners.PJ.push({ partnersId: id, nome: partners[id] });
+    groupedPartners.PJ.push({ partnersId: id, name: partners[id] });
   }
 }
 console.log(groupedPartners)
