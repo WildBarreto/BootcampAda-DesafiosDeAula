@@ -22,4 +22,5 @@ for (let id in partners) {
     groupedPartners.PJ.push({ partnersId: id, name: partners[id] });
   }
 }
+
 console.log(groupedPartners)
