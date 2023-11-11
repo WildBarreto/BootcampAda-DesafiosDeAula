@@ -7,7 +7,6 @@ let products = salesRecipt.split(';');
 let totalNoteValue = 0;
 let fullDiscount = 0;
 
-
 for (let productInformations of products) {
   let [name, informations] = productInformations.split('/');
   var [value, cupom] = informations ? informations.split('=') : [0, 'cupom0'];
