@@ -1,0 +1,30 @@
+.checked {
+  text-decoration: line-through;
+}
+
+.close {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 24px;  /* Define o tamanho da fonte */
+  color: #ff0000;  /* Define a cor (vermelho, por exemplo) */
+  font-weight: bold;  /* Define a espessura da fonte como negrito */
+  font-family: 'Arial', sans-serif;  /* Define a família da fonte */
+  /* Adicione outras propriedades de estilo conforme necessário */
+}
+
+.checkmark {
+  color: green;  /* Define a cor do caractere */
+  font-size: 24px;  /* Define o tamanho da fonte */
+  font-family: 'Arial', sans-serif;  /* Define a família da fonte */
+  /* Outras propriedades de estilo podem ser adicionadas conforme necessário */
+}
+
+.edit {
+  font-size: 20px;
+  color: #0066cc;
+  cursor: pointer;
+}
+
+.edit:hover {
+  text-decoration: underline;
+}
