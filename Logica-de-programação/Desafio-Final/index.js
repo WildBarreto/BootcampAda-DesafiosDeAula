@@ -88,6 +88,25 @@ function createEditButton(li, taskId) {
   };
 }
 
+function createCheckedButton(li) {
+  let span = document.createElement("SPAN");
+  let chekedIcon = document.createTextNode("\u2713");
+
+  span.className = "checkmark";
+  span.appendChild(chekedIcon);
+  li.appendChild(span);
+
+  // Adiciona um evento de clique ao botão de edição
+  span.onclick = () => {
+    // Acessa o elemento li pai
+    const parentLi = span.parentElement;
+
+    // Alterna a classe 'checked' no elemento li
+    parentLi.classList.toggle('checked');
+  };
+
+}
+
 function editTask(taskId) {
   // Obtém as tarefas existentes do localStorage
   let existingTasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -165,6 +184,6 @@ function renderTasks() {
     // Adiciona o botão de fechar à tarefa
     createCloseButton(li, task.id);
     createEditButton(li, task.id)
-
+    createCheckedButton(li, task.id)
   });
 }
