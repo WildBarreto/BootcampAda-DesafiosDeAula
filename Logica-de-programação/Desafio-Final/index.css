@@ -1,3 +1,29 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+  margin-bottom: 30px;
+}
+
+form > label {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+form > button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search{
+  margin-left: -10px;
+ 
+}
+
 .checked {
   text-decoration: line-through;
 }
@@ -16,7 +42,6 @@
 }
 
 .edit {
-  
   font-size: 20px;
   color: #0066cc;
   cursor: pointer;

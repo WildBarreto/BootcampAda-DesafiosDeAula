@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
   <title>ToDo List</title>
 </head>
 
@@ -12,20 +15,31 @@
   <script src="./index.js"></script>
   <h1>Desafio final ToDo List</h1>
 
-  <form name="form_main">
-    <label for="task">Titulo: </label>
-    <input type="text" name="title" id="title" /> <br />
-    <label for="task">Descrição: </label>
-    <input type="text" name="description" id="description" /> <br />
-    <button type="button" onclick="add()">Add</button>
+  <form name="formTask">
+    <label for="task">Titulo:
+      <input type="text" name="title" id="title" /> <br />
+    </label>
+    <label for="task">Descrição:
+      <input type="text" name="description" id="description" /> <br />
+    </label>
+
+    <button type="button" onclick="addTask()">Salvar</button>
+    <button type="button" onclick="renderTasks()">Listar tarefas</button>
+    <label for="task">
+      Pesquisar por ID:
+      <input  type="text" name="id" id="id" /> <br />
+    </label>
+    <button class="search" type="button" onclick="findTaskById(document.formTask.id.value)">&#128269;</button>
+
   </form>
 
   <fieldset>
     <legend>Tarefas:</legend>
     <ul>
-      
+
     </ul>
   </fieldset>
+
 </body>
 
 </html>
